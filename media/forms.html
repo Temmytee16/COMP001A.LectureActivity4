@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tables.html">Tables</a></li>
+          <li><a href="forms.html">Forms</a></li>
+          <li><a href="media.html">Media</a></li>
+        </ul>
+      </nav>
+      <h1>Forms Page</h1>
+    </header>
+    <main>
+      <form action="/submit" method="post">
+        <label for="Username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Temmytee16"
+        />
+
+        <br />
+        <!-- Line break for better layout-->
+
+        <!--Label and  Password input field -->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Temmy19"
+        />
+
+        <br />
+
+        <!-- Label and Email input field -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Temitopeolikuntuyi@gmail.com"
+        />
+
+        <br />
+
+        <!-- Number input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="26" />
+
+        <br />
+
+        <!-- Radio buttons for gender selection -->
+        <label for="male">male:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+
+        <br />
+
+        <!-- Checkbox for newsletter subscription -->
+        <label for="subscribe">subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+
+        <br />
+
+        <!-- Dropdown menu for country selection -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="nigeria">Nigeria</option>
+          <option value="ghana">Ghana</option>
+          <!-- other options -->
+        </select>
+
+        <br />
+
+        <!-- Textarea for additional comments -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+        <br />
+
+        <!-- File input for uploading files -->
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file" />
+
+        <br />
+
+        <!--Hidden input field (not visible to users) -->
+        <input type="hidden" id="userId" name="userId" value="12345" />
+
+        <br />
+
+        <!-- Range input for selecting a value within a range -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" />
+
+        <br />
+
+        <!-- Date input for selecting a date -->
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
+
+        <br />
+
+        <!-- Color input foe selecting a color -->
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor" />
+
+        <br />
+
+        <!-- Submit button to send the form data -->
+        <input type="submit" value="Submit" />
+
+        <!-- Reset button to clear the form fields -->
+        <input type="reset" value="Reset" />
+      </form>
+      <!-- End of the form element -->
+    </main>
+    <footer>
+      <p>&copy; 2025 Temitope Olikuntuyi. All rights reserved.</p>
+      <p>
+        <a href="https://github.com/Temmytee16" target="_blank">Temmytee16</a>
+      </p>
+    </footer>
+  </body>
+</html>
